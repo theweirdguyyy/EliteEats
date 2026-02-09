@@ -8,72 +8,89 @@ const dishes = [
     name: "Chicken Burger",
     price: "$5.99",
     tag: "Hot",
-    image: "public/img/menu1.png",
+    image: "/img/menu1.png",
   },
   {
     id: 2,
     name: "Peri Peri Pizza",
     price: "$8.49",
     tag: "New",
-    image: "public/img/menu2.png",
+    image: "/img/menu2.png",
   },
   {
     id: 3,
     name: "Sushi Deluxe",
     price: "$6.25",
     tag: "",
-    image: "public/img/menu3.png",
+    image: "/img/menu3.png",
   },
   {
     id: 4,
     name: "Paneer Poppers",
     price: "$7.80",
     tag: "Hot",
-    image: "public/img/menu4.png",
+    image: "/img/menu4.png",
   },
   {
     id: 5,
     name: "Club Sandwich",
     price: "$3.20",
     tag: "",
-    image: "public/img/menu5.png",
+    image: "/img/menu5.png",
   },
   {
     id: 6,
     name: "Mocktail Mojito",
     price: "$4.75",
     tag: "New",
-    image: "public/img/menu6.png",
+    image: "/img/menu6.png",
   },
   {
     id: 7,
     name: "Nacho Fiesta",
     price: "$7.80",
     tag: "Hot",
-    image: "public/img/menu7.png",
+    image: "/img/menu7.png",
   },
   {
     id: 8,
     name: "Biryani Bowl",
     price: "$3.20",
     tag: "",
-    image: "public/img/menu8.png",
+    image: "/img/menu8.png",
   },
 ];
 
+// const Menu = () => {
+//   return (
+//     <section className="bg-white dark:bg-black text-black dark:text-white py-16 px-5 lg:px-14 transition-colors duration-300">
+//       <div className="text-center mb-12">
+//         <p className="text-orange-500 font-medium uppercase tracking-wider mb-2">
+//           Our Menu
+//         </p>
+//         <h2 className="text-3xl md:text-4xl font-bold">Top Picks For You</h2>
+//       </div>
+
+//       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
+//         {dishes.map((dish) => (
+//           <MenuCard key={dish.id} {...dish} /> // JS This is Spread Operator or in react props spread syntax
+//         ))}
+//       </div>
+//     </section>
+//   );
+// };
 const Menu = () => {
   return (
     <section className="bg-white dark:bg-black text-black dark:text-white py-16 px-5 lg:px-14 transition-colors duration-300">
       <div className="text-center mb-12">
-        <p className="text-orange-500 font-medium uppercase tracking-wider mb-2">
+         <p className="text-orange-500 font-medium uppercase tracking-wider mb-2">
           Our Menu
-        </p>
-        <h2 className="text-3xl md:text-4xl font-bold">Top Picks For You</h2>
-      </div>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
-        {dishes.map((dish) => (
-          <MenuCard key={dish.id} {...dish} /> // JS This is Spread Operator or in react props spread syntax
+         </p>
+         <h2 className="text-3xl md:text-4xl font-bold">Top Picks For You</h2>
+       </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {dishes.map((item) => (
+          <MenuCard key={item.id} {...item} />
         ))}
       </div>
     </section>
