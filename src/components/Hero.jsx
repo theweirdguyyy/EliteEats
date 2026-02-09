@@ -4,7 +4,7 @@ import { MdDeliveryDining } from "react-icons/md";
 import { GiFoodTruck } from "react-icons/gi";
 import { BsCartCheckFill } from "react-icons/bs";
 import { FaLeaf } from "react-icons/fa";
-import img from "../assets/img/Hero.jpg";
+// import img from "/img/Hero.jpg";
 
 const Hero = () => {
   return (
@@ -45,7 +45,7 @@ const Hero = () => {
       <div className="lg:w-1/2 w-full relative flex justify-center mb-10 lg:mb-0">
         <div className="relative">
           <img
-            src={img}
+            src="/img//Hero.jpg"
             alt="Delivery Guy"
             className="rounded-full w-[350px] h-[350px] md:w-[400px] md:h-[400px] object-cover"
           />

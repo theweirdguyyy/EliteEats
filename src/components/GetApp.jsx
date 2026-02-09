@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../assets/img/order.png";
+// import img from "/img/order.png";
 
 const GetApp = () => {
   return (
@@ -26,7 +26,7 @@ const GetApp = () => {
           {/* Right Image */}
           <div className="flex justify-center">
             <img
-              src={img}
+              src="/img/order.png"
               alt="App Preview"
               className="w-[280px] md:w-[320px] drop-shadow-2xl"
             />

@@ -1,22 +1,22 @@
 import React from "react";
-import img1 from "../assets/img/process1.png";
-import img2 from "../assets/img/process2.png";
-import img3 from "../assets/img/process3.png";
+// import img1 from "/img/process1.png";
+// import img2 from "/img/process2.png";
+// import img3 from "/img/process3.png";
 import ProcessCard from "../layouts/ProcessCard";
 
 const processSteps = [
   {
-    img: img1,
+    Image: "/img/process1.png",
     title: "Easy To Order",
     desc: "You only need a few steps in ordering food.",
   },
   {
-    img: img2,
+    Image: "/img/process2.png",
     title: "Fastest Delivery",
     desc: "Delivery that is always on time even faster.",
   },
   {
-    img: img3,
+    Image: "/img/process3.png",
     title: "Best Quality",
     desc: "Not only fast for us, quality is also number one.",
   },
